@@ -6,12 +6,134 @@ body, html {
     overflow: hidden;
 }
 /* pc */
-@media screen and (min-height: 1080px) and (max-width: 1920px) {
+@media screen and (min-width: 1080px) and (orientation: landscape) {
+    body {
+        background-color: rgb(66, 66, 66);
+    }
+    video#Video {
+        width: 47.5%;
+        height: 30%;
+        margin-top: 1%;
+        margin-left: 27.5%;
+        border-radius: 8px;
+    }
+    div#Initial_Text {
+        position: absolute;
+        bottom: 80%;
+        left: 36.5%;
+        background-color: rgb(31, 31, 31);
+        width: 30%;
+        height: 17%;
+        border-radius: 15px;
+        
+    }
+    p#Question {
+        font: 19pt normal;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: rgb(210, 210, 210);
+        text-align: center;
+    }
+    p#Question2 {
+        color: rgb(210, 210, 210);
+        font: 17pt normal;
+        position: relative;
+        bottom: 15%;
+        text-align: center;
+    }
 
+    /* botões */
+
+    button#SimBtt {
+        position: relative;
+        font: 20pt normal;
+        background-color: rgba(172, 255, 47, 0.9);
+        border-radius: 15px;
+        left: 10%;
+        bottom: 17%;
+        height: 25%;
+        width: 35%;
+    }
+    button#NãoBtt {
+        position: relative;
+        font: 20pt normal;
+        background-color: rgba(220, 0, 0, 0.9);
+        border-radius: 15px;
+        left: 20%;
+        bottom: 17%;
+        height: 25%;
+        width: 35%;
+    }
+
+    /* easter egg */
+
+    div#Easter_Egg {
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 55%;
+        height: 15%;
+        overflow: hidden;
+        left: 25%;
+        border-radius: 25px;
+        bottom: 50%;
+    }
+    p#Easter {
+        text-align: center;
+        font: 31pt normal;
+        color: white;
+    }
+
+    /* parte 2 */
+
+    div#Final_Text {
+        display: none;
+        position: absolute;
+        background-color: rgba(1, 49, 11, 0.788);
+        width: 65%;
+        height: 45%;
+        border-radius: 20px;
+        top: 2%;
+        left: 18%;
+        text-align: justify;
+        overflow: hidden;
+    }
+    p#TextFinal {
+        position: relative;
+        width: 90%;
+        height: 90%;
+        left: 5%;
+        top: -3%;
+        color: white;
+        font: 20pt normal;
+    }
+    div#img1 {
+        display: none;
+        position: absolute;
+        background-image: url(./src/IMG-20250303-WA0047.jpg);
+        background-repeat: no-repeat;
+        width: 700px;
+        height: 450px;
+        top: 50%;
+        left: 8%;
+        background-size: 100% 100%;
+        border-radius: 20px;
+    }
+    div#img2 {
+        display: none;
+        position: absolute;
+        background-image: url(./src/IMG-20250303-WA0044.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 700px;
+        height: 450px;
+        top: 50%;
+        left: 54%;
+        border-radius: 20px;
+    }
 }
 
 /* mobile */
-@media screen and (min-width: 250px) and (max-height: 1070px) {
+@media screen and (min-width: 250px) and (max-height: 1070px) and (orientation: portrait) {
     body {
         background-color: rgb(66, 66, 66);
     }
@@ -74,7 +196,7 @@ body, html {
     div#Easter_Egg {
         display: none;
         position: absolute;
-        background-color: rgba(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.8);
         width: 98%;
         height: 28%;
         overflow: hidden;
