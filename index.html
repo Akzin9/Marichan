@@ -1,1 +1,66 @@
-aaa
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabéns</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body id="Background" onload="Start()">
+    <div id="main1">
+
+        <!-- vídeo do background da primeira parte -->
+
+        <video loop id="Video">
+            <source src="./src/background1.mp4" type="video/mp4">
+        </video>
+
+        <!-- texto -->
+
+        <div id="Initial_Text">
+            <p id="Question">Pronta para iniciar esse pequeno parabéns?</p>
+            <p id="Question2"><strong>(clique no "Não", só pra testar hehe)</strong></p>
+
+            <!-- botões -->
+            <button id="SimBtt" onclick="Sim()"><strong>Sim</strong></button>
+
+            <button id="NãoBtt" onclick="Não()"><strong>Não</strong></button>
+
+        </div>
+
+        <!-- texto easter egg -->
+
+        <div id="Easter_Egg" onclick="Easter_Off()">
+
+            <p id="Easter"><strong>Tá achando que tem alguma escolha aqui, queridinha💅?</strong></p>
+
+        </div>
+
+        <!-- Parte 2 do projeto -->
+
+        <!-- Texto Final -->
+
+        <div id="Final_Text">
+
+            <p id="TextFinal">Oii, FELIZ ANIVERSÁRIOOOOO! Que venham muito mais anos de vida pela frente ainda. Comprei algo que acho que cê vai gostar, espero que chegue antes do anime summit kkk. Enfim, agora vai começar o monólogo hehe. Parabéns por mais um ano de existência, acho sua existência mt foda, seus gostos e comportamentos são bem interessantes de se analisar, não consigo saber muito bem o que se passa pela sua cabeça, mas ao mesmo tempo sempre sinto que tô perto de saber, acho mt massa isso kkk. Você é do krl, é muito divertido estar com vc, conversar com vc, tentar te ler tbm kkkkk. Você é tão atenciosa, gentil, perspicaz e interessante, é uma amiga mt foda e uma pessoa surreal, espero que você tenha a dimensão do ser humano incrível que você é. Você merece coisa pra krl, espero que consiga conquistar o que almeja na vida, se eu for de alguma utilidade pra algo pode sempre contar comigo, nem que seja pra conversar sobre algo e lidar mais facilmente com esse algo, tô sempre aqui pra quando quiser XD. Acho que é isso, tô com um tanto de sono e não sei se seria uma boa tentar me expressar mais estando com sono kkkkk, espero que eu tenha me expressado minimamente bem o suficiente para que entenda o quão importante vc é pra mim. Aproveite bem o seu dia amg! </p>
+
+        </div>
+
+        <!-- Imagens -->
+
+        <div id="img1"></div>
+        
+        <div id="img2"></div>
+
+        <!-- Música -->
+
+        <audio loop id="Music">
+
+            <source src="./src/unravel.mp3" type="audio/mp3">
+
+        </audio>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
