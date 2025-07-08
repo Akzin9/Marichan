@@ -1,9 +1,3 @@
-function Start() { //toca o vídeo ao carregar a página
-    let StartVideo = document.querySelector("video#Video");
-    StartVideo.play();
-    StartVideo.volume = (0.04);
-};
-
 function Não() { //mostra div easter egg
     let Display_Easter_show = document.querySelector("div#Easter_Egg");
     Display_Easter_show.style.display = "initial";
