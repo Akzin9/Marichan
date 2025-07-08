@@ -1,5 +1,9 @@
-function Não() { //mostra div easter egg
+function Não() { //mostra div easter egg e toca vídeo de fundo
     let Display_Easter_show = document.querySelector("div#Easter_Egg");
+    let StartVideo = document.querySelector("video#Video");
+
+    StartVideo.play();
+    StartVideo.volume = (0.04);
     Display_Easter_show.style.display = "initial";
 };
 
