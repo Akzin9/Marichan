@@ -19,6 +19,7 @@ function Sim() { //desativar parte 1 e iniciar parte 2
     let Initial_Div_Off = document.getElementById("Initial_Text");
     let Easter_Egg_Off = document.getElementById("Easter_Egg");
 
+    video_Off.pause();
     video_Off.style.display = "none";
     Initial_Div_Off.style.display = "none";
     Easter_Egg_Off.style.display = "none";
